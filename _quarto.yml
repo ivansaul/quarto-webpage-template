@@ -1,0 +1,55 @@
+lang: en
+project:
+  type: website
+  preview: 
+      port: 3333
+
+website:
+  #title: "GITBOOK"
+  reader-mode: true
+  navbar:
+    pinned: true
+    logo: "images/gitbook.svg"
+    right:
+      - text: "Blog"
+        file: blog.qmd
+      - text: "Docs"
+        file: docs.qmd
+      - text: "About"
+        file: index.qmd
+      - icon: github
+        href: https://github.com
+  
+  sidebar:
+    - title: "Blog"
+      style: docked
+      contents: 
+        - auto: posts/
+
+  page-footer: 
+    left: "Made with ❤️ by ivansaul"  
+    center:
+      - text: "Blog"
+        file: blog.qmd
+      - text: "Docs"
+        file: docs.qmd
+      - text: "About"
+        file: index.qmd
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
+
+format:
+  html:
+    theme: 
+      dark: solar
+      light: litera
+    css: styles.css
+    toc: true
+    highlight-style: monokai
+    code-copy: true
+
+
+

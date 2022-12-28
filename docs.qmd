@@ -1,0 +1,11 @@
+---
+title: "Docs"
+sidebar: true
+listing: 
+    contents: posts
+    sort: "date desc"
+    type: grid
+    fields: [subtitle]
+page-layout: full
+title-block-banner: false
+---

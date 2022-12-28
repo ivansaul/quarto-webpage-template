@@ -1,0 +1,43 @@
+---
+title: "Callouts"
+subtitle: "How use callouts in Obsidian"
+author: "ivansaul"
+date: "2022-12-28"
+categories: [obsidian, code]
+#image: "https://i.redd.it/5ea05l0h0yo81.gif"
+title-block-banner: false
+---
+
+Obsidian Callouts is a way to highlight parts of your notes to make them more readable.
+
+Use the following syntax to denote a callout block: `> [!INFO]`.
+
+```txt
+> [!INFO] Quote Title
+> Here's a callout block. 
+> It supports **markdown** and [[Internal link|wikilinks]].
+```
+
+## Custom Callouts
+Create a snippets folder inside `.obsidian` then, create a `css` file and finaly enable snippets in settings `(apariencia -> fragmentos css`).
+
+```css
+.callout[data-callout="my-callout-type"] { 
+	--callout-color: 0, 0, 0; 
+	--callout-icon: icon-id; 
+	--callout-icon: '<svg>...custom svg...</svg>'; 
+}
+```
+
+![](https://i.redd.it/5ea05l0h0yo81.gif)
+
+### Examples
+Using  [lucide](https://lucide.dev/icon/thumbs-up?search=LIKE) icons.
+```css
+.callout[data-callout="twitter-lu"] {
+    --callout-color: 255, 0, 0;
+    --callout-icon: "lucide-twitter";
+}
+```
+
+<iframe title="How to customize Obsidian Callouts with your very own SVG icon created in Excalidraw" src="https://www.youtube.com/embed/tSSc42tCVto?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>

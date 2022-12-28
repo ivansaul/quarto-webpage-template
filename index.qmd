@@ -1,0 +1,38 @@
+---
+sidebar: false
+title: "Your Name"
+image: "images/profile.jpg"
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 16em
+  links:
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/
+    - icon: github
+      text: Github
+      href: https://github.com/
+---
+
+### Hi there!
+
+Thanks for stopping by my little corner of the interned My name is Sam Csik, and I'm excited to meet you.
+
+---
+
+### Education 
+**MS in Ecology, Evolution & Marine Biology** (2020) | University of California, Santa Barbara 'Santa Barbara, CA
+
+**BS in Marine Biology** (2016) | Northeastern University Boston, MA 
+
+---
+
+### Experience 
+
+**Data Training Coordinator** (2021 - present) | National Center for Ecological Analysis and Synthesis | University of California, Santa Barbara, CA 
+
+---
