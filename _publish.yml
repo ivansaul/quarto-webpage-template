@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 31a64305-95f5-467d-964a-d45f1f94a6dc
+      url: 'https://quartopub.com/sites/quartoweb/app'
