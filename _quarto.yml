@@ -50,6 +50,4 @@ format:
     toc: true
     highlight-style: monokai
     code-copy: true
-
-
-
+    code-overflow: wrap
