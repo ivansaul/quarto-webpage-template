@@ -1,12 +1,22 @@
 lang: en
 project:
   type: website
+  resources: 
+    - images/
   preview: 
       port: 3333
 
 website:
-  #title: "GITBOOK"
+  title: ""
+  image: "images/gitbook.svg"
+  favicon: "images/favicon.png"
+  site-url: "https://github.com/"
+  description: "my personal web page build with quarto"
+  open-graph: true
+  twitter-card: true
   reader-mode: true
+  page-navigation: true
+  search: true
   navbar:
     pinned: true
     logo: "images/gitbook.svg"
@@ -19,6 +29,7 @@ website:
         file: index.qmd
       - icon: github
         href: https://github.com
+      
   
   sidebar:
     - title: "Blog"
@@ -27,7 +38,7 @@ website:
         - auto: posts/
 
   page-footer: 
-    left: "Made with ❤️ by ivansaul"  
+    left: "Made with ❤️ by [ivansaul](https://github.com/ivansaul)"  
     center:
       - text: "Blog"
         file: blog.qmd
