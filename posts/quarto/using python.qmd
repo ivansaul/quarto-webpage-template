@@ -54,7 +54,6 @@ from IPython.display import display, Markdown
 display(Markdown("""
 The radius of the circle is {radius}.
 """.format(radius = radius)))
-print("dlaskldñasñdkñak")
 ```
 
 ## Resources
