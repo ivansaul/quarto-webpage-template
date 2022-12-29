@@ -11,7 +11,7 @@ Quarto supports executable Python code blocks within markdown. This allows you t
 
 ## Code Blocks
 
-Code blocks that use braces around the language name (e.g. ```{python}) are executable, and will be run by Quarto during render. For a demonstration of a line plot on a polar axis, see @fig-polar.
+Code blocks that use braces around the language name (e.g. `{python}`) are executable, and will be run by Quarto during render. For a demonstration of a line plot on a polar axis, see @fig-polar.
 
 ```{python}
 #| echo: fenced
@@ -30,6 +30,16 @@ fig, ax = plt.subplots(
 ax.plot(theta, r)
 ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
+plt.show()
+```
+
+Here is another example:
+
+```{python}
+#| echo: fenced
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
 plt.show()
 ```
 
