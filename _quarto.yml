@@ -1,4 +1,7 @@
 lang: en
+execute:
+  freeze: auto
+
 project:
   type: website
   resources: 

@@ -2,3 +2,7 @@
   quarto-pub:
     - id: 31a64305-95f5-467d-964a-d45f1f94a6dc
       url: 'https://quartopub.com/sites/quartoweb/app'
+
+  netlify:
+    - id: "206e5b4f-bd4f-42b6-a7ba-c2222205ae62"
+      url: "quarto-webpage-template.netlify.app"

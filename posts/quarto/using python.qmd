@@ -1,0 +1,52 @@
+---
+title: "Using Python"
+subtitle: "Using Python in Quarto"
+author: "ivansaul"
+date: "2022-12-28"
+categories: [python, code, quarto]
+image: "https://i.imgur.com/PPvv9vA.png"
+---
+
+Quarto supports executable Python code blocks within markdown. This allows you to create fully reproducible documents and reports—the Python code required to produce your output is part of the document itself, and is automatically re-run whenever the document is rendered.
+
+## Code Blocks
+
+Code blocks that use braces around the language name (e.g. ```{python}) are executable, and will be run by Quarto during render. For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| echo: fenced
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+#| code-fold: false
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Inline Code
+
+To include executable expressions within markdown in a Python notebook, you use [`IPython.display.Markdown`](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html) to dynamically generate markdown from within an ordinary code cell. For example, if we have a variable radius we can use it within markdown as follow:
+
+```{python}
+#| echo: fenced
+radius = 10
+from IPython.display import display, Markdown
+display(Markdown("""
+The radius of the circle is {radius}.
+""".format(radius = radius)))
+print("dlaskldñasñdkñak")
+```
+
+## Resources
+
+- [Python Execution Options](https://quarto.org/docs/computations/execution-options.html)
