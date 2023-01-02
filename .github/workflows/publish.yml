@@ -28,7 +28,7 @@ jobs:
       - name: Render Custom Richlink Shortcode
         run: python -c 'import os;print(os.environ)'
         env:
-          iframely_api_key: ${{ secrets.IFRAMELY_API_KEY }}
+          IFRAMELY_API_KEY: ${{ secrets.IFRAMELY_API_KEY }}
       - run: python richlink.py
 
       - name: Publish Quarto Project
