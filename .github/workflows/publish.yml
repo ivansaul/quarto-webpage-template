@@ -25,10 +25,11 @@ jobs:
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2 
       
-      - name: Render Custom Richlink Shortcode 
+      - name: Render Custom Richlink Shortcode
+        run: python -c 'import os;print(os.environ)'
         env:
           IFRAMELY_API_KEY: ${{ secrets.IFRAMELY_API_KEY }}
-        run: python richlink.py
+      - run: python richlink.py
 
       - name: Publish Quarto Project
         uses: quarto-dev/quarto-actions/publish@v2
