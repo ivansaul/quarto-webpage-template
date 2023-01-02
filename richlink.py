@@ -78,5 +78,5 @@ def render(root_dir, ext):
 if __name__ == "__main__":
 
     load_dotenv()
-    api_key = env['iframely_api_key']
+    api_key = env['IFRAMELY_API_KEY']
     render(root_dir="_site", ext="html")
