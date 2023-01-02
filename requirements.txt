@@ -1,3 +1,4 @@
-jupyter
-matplotlib
-numpy
+jupyter >= 1.0.0
+matplotlib >= 3.6.2
+numpy >= 1.24.1
+requests >= 2.28.1
