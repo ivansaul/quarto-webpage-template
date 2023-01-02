@@ -22,7 +22,14 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       
-      - name: Render and Publish 
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2 
+      
+      - name: Render Custom Richlink Shortcode 
+        env: IFRAMELY_API_KEY: ${{ IFRAMELY_API_KEY }}
+        run: python richlink.py
+
+      - name: Publish Quarto Project
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: netlify

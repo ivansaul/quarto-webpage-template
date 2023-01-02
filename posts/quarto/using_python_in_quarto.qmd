@@ -1,6 +1,6 @@
 ---
-title: "Using Python"
-subtitle: "Using Python in Quarto"
+title: "Using Python in Quarto"
+subtitle: "Execute Python Code in Quarto"
 author: "ivansaul"
 date: "2022-12-28"
 categories: [python, code, quarto]
@@ -58,4 +58,4 @@ The radius of the circle is {radius}.
 
 ## Resources
 
-- [Python Execution Options](https://quarto.org/docs/computations/execution-options.html)
+{{ richlink https://quarto.org/docs/computations/execution-options.html }}
