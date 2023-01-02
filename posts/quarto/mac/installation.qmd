@@ -48,4 +48,4 @@ A few more notes:
 
 ## Learn more
 
-[Quarto on Homebrew](https://formulae.brew.sh/cask/quarto)
+{{ richlink https://formulae.brew.sh/cask/quarto }}
