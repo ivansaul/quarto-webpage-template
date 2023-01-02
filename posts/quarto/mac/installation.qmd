@@ -49,3 +49,7 @@ A few more notes:
 ## Learn more
 
 {{ richlink https://formulae.brew.sh/cask/quarto }}
+
+{{ richlink https://towardsdatascience.com/environment-variables-python-aecb9bf01b85 }}
+
+{{ richlink https://www.youtube.com/watch?v=xE--AOrJsdk }}

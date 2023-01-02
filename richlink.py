@@ -32,29 +32,25 @@ def convert_shortcodes(string):
     if re.search(pattern, string):
         for match in re.finditer(pattern, string):
             link, shortcode = match.group(1), match.group(0)
-            string = string.replace(shortcode, richlink(link))
-        return string
-    else:
-        print("nada")
-        return string
+            string = string.replace(shortcode, richlink(link.strip()))
+
+    return (string)
 
 
 def richlink(url):
     """return richlink html from iframely.com"""
-
+    
     url_api = f"https://iframe.ly/api/oembed?url={url}&api_key={api_key}&card=small"
     response = requests.get(url_api)
     if response.status_code == 200:
         try:
             data = response.json()
-            return (data['html'])
+            return data['html']
         except:
-            print("200 Error al obtener el HTML de la página")
-            print(url)
+            print("200?", url)
             return card_link(url)
     else:
-        print("Error al obtener el HTML de la página")
-        print(url)
+        print("4xx", url)
         return card_link(url)
 
 
