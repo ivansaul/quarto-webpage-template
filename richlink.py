@@ -4,7 +4,6 @@ import re
 import glob
 import json
 import requests
-from os import environ as env
 from dotenv import load_dotenv
 
 
@@ -78,5 +77,5 @@ def render(root_dir, ext):
 if __name__ == "__main__":
 
     load_dotenv()
-    api_key = env['IFRAMELY_API_KEY']
+    api_key = os.environ['IFRAMELY_API_KEY']
     render(root_dir="_site", ext="html")
